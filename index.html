@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sublime Text Super Usage</title>
+		<meta name="description" content="A prensentaion by Mandy Thomson about levelling up on your Sublime Text Skills">
+		<meta name="author" content="Mandy Thomson">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black-custom.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/solarized-dark.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section class="silde-1" data-background="images/superuser-tile.jpg" data-background-repeat="repeat" data-background-size="150px">
+					<div style="background-color:rgba(0,0,0,0.8); padding-top:20px;">
+						<h1 style="line-height:0.8;">Sublime Text<br/>Super Usage</h1>
+						<h3>Level-up your text editor skills</h3>
+						<p>
+							<small>Presented by <strong>Mandy Thomson</strong> / <a href="http://twitter.com/mandymadethis">@mandymadethis</a></small>
+						</p>
+					</div>
+					
+					<aside class="notes">
+						- I hope by the end of this presentation, you've picked up at least a few new tricks to help you work more efficiently.
+						- If you've been using ST2 or if you're new to Sublime, DL ST3
+					</aside>
+				</section>
+
+				<section>
+					<a href="http://www.sublimetext.com/3" target="_blank"><img src="images/sublime-3.png" alt="sublime text three"></a>
+					<aside class="notes">
+						- Don't worry about the "beta" part, it's very stable (been out for over 2 years)
+						- Many plugins will only work on v3 - For the rest of the presentation I'll be talking about V3. I can't guarantee all of the things I mention will work in V2.
+						- When you first open it, it's a bit like  (next slide)- HUH?
+					</aside>
+				</section>
+				
+				<section data-background="images/confused.gif">
+					<aside class="notes">
+						- HUH? What's all the hype about?
+						- This thing doesn't seem to do very much
+					</aside>
+				</section>
+
+				<section data-background="images/nothing.gif">
+					<aside class="notes">
+						- It's true. Out of the box, sublime really doesn't do all that much, but it's power lies in it's expandability.
+						- That's where Sublime's vast package ecosystem comes into play
+					</aside>
+				</section>
+
+				<section data-background="images/packages.gif"><h1>Packages FTW!</h1>
+					<aside class="notes">
+						- I'm going to quickly give you a list of packages, from the "Seriously Useful" (I'd actually call them necessities) to the "nice to haves".
+					</aside>
+				</section>
+
+				<section>
+					<h2>Seriously Useful Plugins:</h2>
+					<div class="fragment">
+						<p>
+							<a href="https://packagecontrol.io/installation" target="_blank">Package Control</a>
+						</p>
+						<code>View → Show Console</code>
+					</div>
+					<p class="fragment"><a href="https://github.com/titoBouzout/SideBarEnhancements" target="_blank">SideBarEnhancements</a></p>
+					<p class="fragment"><a href="http://facelessuser.github.io/BracketHighlighter/" target="_blank">BracketHighlighter</a></p>
+					<p class="fragment"><a href="http://docs.emmet.io/" target="_blank">Emmet</a></p>
+					<p class="fragment"><a href="https://packagecontrol.io/packages/CSS3" target="_blank">CSS3</a></p>
+					<aside class="notes">
+						- I would actually call these necessities
+						- Package Control: is what's going to allow you to easily add, edit and delete  all your Sublime Text packages, from right inside the editor. I'm actually not sure why this is still a separate package itself - It really should just come with Sublime.
+						- SideBarEnhancements: also feels like it should just be a core part of Sublime (show in sublime)
+						- BracketHighlighter:super helpful, shows the matching tags, brackets, or quotes.
+						- CSS3: just syntax highlighting for CSS3 properties
+					</aside>
+				</section>
+
+				<section>
+					<h2>Get to know your plugins!</h2>
+					<code>Preference → Package Settings → [Package] → Settings - Default</code>
+					<p>Make Changes in the User Settings File</p>
+					<code>Preference → Package Settings → [Package] → Settings - User</code>
+				</section>
+				
+				<section>
+					<h2>Really Nice to Have Plugins:</h2>
+					<p class="fragment"><a href="https://github.com/Monnoroch/ColorHighlighter" target="_blank">Color Highlighter</a></p>
+					<p class="fragment"><a href="https://github.com/BoundInCode/AutoFileName" target="_blank">AutoFileName</a></p>
+					<p class="fragment"><a href="https://github.com/SublimeText/Origami" target="_blank">Origami</a></p>
+					<p class="fragment"><a href="https://github.com/Azd325/sublime-text-caniuse" target="_blank">CanIuse</a></p>
+					<p class="fragment"><a href="https://github.com/Colorsublime/Colorsublime-Plugin" target="_blank">ColorSublime</a></p>
+					<div class="fragment">
+						<h5>Code Formatters/Beautifiers:</h5>
+						<p><a href="" target="_blank">HTML5 Beautify</a></p>
+						<p><a href="" target="_blank">JavaScript Beautify</a></p>
+						<p><a href="" target="_blank">SassBeautify</a></p>
+					</div>
+					<aside class="notes">
+						- Color Highlighter: show in sublime
+						- AutoFileName: show in sublime
+						- Origami: Explain what it does but Show Cloning (more like: opening the same file twice without making a second copy.
+						- CanIUse: Place your cursor over a css or HTML5 property, use the keyboard shortcut you assign to this plugin => Your browser will open to the corresponding caniuse.com search query.
+						- ColorSublime: allows you to preview colour themes directly in Sublime and quickly install them
+					</aside>
+				</section>
+
+				<section>
+					<h2>Command Pallet</h2>
+					<p><img src="images/mac.svg">&nbsp;&nbsp;<code> Shift + ⌘ + P</code></p>
+					<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Shift + Ctrl + P</code></p>
+				</section>
+
+				<section>
+					<h2>What can you do with the Command Pallet?</h2>
+					<p class="fragment">Access almost anything that is in the menu bar</p>
+					<p class="fragment">Run plugin/package commands</p>
+					<p class="fragment">Change/Set the syntax of a file</p>
+					<p class="fragment">Change the case of selected text</p>
+					<p class="fragment">HTML: Encode Special Characters</p>
+					<aside class="notes">
+						- this is where you can see and access all the commands for any of the packages you've installed - SassBeaut, HTML Beaut etc.
+						- Set the syntax of a file. Great for when you copy and past code from somewhere into an empty doc, just for holding (also should mention that if you leave a file unsaved and close Sublime, it will reopen when you open the program)
+						- Show how to change case
+					</aside>
+				</section>
+
+				<section>
+					<h2>Go To Anything</h2>
+					<p><img src="images/mac.svg">&nbsp;&nbsp;<code> ⌘ + P</code></p>
+					<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + P</code></p>
+					<aside class="notes">
+						- This brings up a palette that allows you to navigate to any file, line or symbol within your current projects or open files
+						- One habit that I always do is to drag my project folder into sublime, so that I have quick access to everything I could need - directly from sublime. I see a lot of developers work with one file at a time in the editor, and they go back and forth looking for things in their finder. Go to Anything is MUCH faster and more convenient.
+						- uses 'Fuzzy Search' - which means you don't need to type an entire word or phrase to find a match.
+						- So lets say I wanted to open a file called style.scss: just start typing stsc...
+						- Getting into a habit of using this is one thing that's going to save you a ton of time.
+					</aside>
+				</section>
+
+				<section>
+					<h4>User Preferences</h4>
+					<p><img src="images/mac.svg">&nbsp;&nbsp;<code>Sublime Text → Preferences → Settings - User</code></p>
+					<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Preferences → Settings - User</code></p>
+				</section>
+
+<section>
+<h4>Preferences.sublime-settings</h4>
+<pre>
+<code class="hljs" data-trim>
+{
+// ignore these files when using sublime's "find" 
+"binary_file_patterns":
+[
+"css/",
+"*.dds",
+"*.eot",
+"*.gif",
+"*.ico",
+"*.jar",
+"*.jpeg",
+"*.jpg",
+"js/vendor/*.js",
+"*.map",
+"*.pdf",
+"*.png",
+"node_modules/",
+".sass-cache/",
+"scripts.min.js",
+"*.scssc",
+"*.swf",
+"*.tga",
+"*.ttf",
+"*.zip"
+],
+// The following settings all make your code 
+// a bit easier to read in your editor
+"bold_folder_labels": true,
+"caret_extra_bottom": 2,
+"caret_extra_top": 2,
+"caret_style": "solid",
+"color_scheme": "Packages/User/Dark-Dracula.tmTheme",
+"font_face": "InputMono Thin",
+"font_size": 16,
+"highlight_line": true,
+"highlight_modified_tabs": true,
+"line_padding_bottom": 2,
+"line_padding_top": 2,
+"wide_caret": true,
+"sidebar_font_big": true,
+
+// always show the code fold arrows, so you remember they are there to use
+"fade_fold_buttons": false,
+// new window every time you open a file?! Nope! Tabs please
+"open_files_in_new_window": false,
+// gives some space to the bottom of the file
+"scroll_past_end": true,
+
+// weather you like tabs or spaces, you can set your preference here
+"tab_size": 4,
+"translate_tabs_to_spaces": true,
+// if you add a new theme to sublime you'll need to 
+// add it here to make it active. Some great themes are: 
+// Material Theme, Cobalt2, Spacegray, PreDawn or Seti_UI
+"theme": "Cobalt2.sublime-theme",
+"word_wrap": true
+}
+</code>
+</pre>
+</section>
+
+				<section>
+					<h1>Find + Replace</h1>
+					<p>in multiple files</p>
+					<p><img src="images/mac.svg">&nbsp;&nbsp;<code> ⌘ + Shift + F</code></p>
+					<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Shift + F</code></p>
+					<aside class="notes">
+						- understanding these settings makes searching a lot more efficient
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_regex.png">
+					<p><a href="http://www.regexr.com/">RegExr</a> is an online tool to learn, build, & test Regular Expressions</p>
+					<aside class="notes">
+						- instead of just matching a string, you can search using a regular expression
+						- I'm still learning Regex myself. Here is a resource
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_CaseSensitive.png">
+					<aside class="notes">
+						Do you want the search to ignore the case of a word or not?
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_WholeWord.png">
+					<aside class="notes">
+						Do you want to match partial words? For example if I search for text, should it match the last four letters of sublimeText?
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_ShowContext.png">
+					<aside class="notes">
+						- When turned on - the search results will include the previous and next two lines (for a total of 5 lines.
+						- When it is turned off, the results only display the line with the match.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_UseBuffer.png">
+					<aside class="notes">
+						Sublime's default is to show search results in a small panel at the bottom of the editor. With use buffer turned on, search results will open in a new tab.
+					</aside>
+				</section>
+
+<section>
+<img src="images/findReplace_where.png">
+<pre>
+<code class="hljs" data-trim>
+// Specific Folders
+/js, library/images/
+// Project
+&lt;project>
+// Include Filter
+*.scss = all sass files
+style.scss = only this file
+index. = index.html, index.js, index.php, etc
+// Exclude Filter
+*.js, -*.min.js = all .js files, except the minified ones
+</code>
+</pre>
+<aside class="notes">
+- Multiple absolute folder paths each separated by a comma.
+- Limit your search to a specific file, file type, or file name.
+</aside>
+</section>
+				
+				<section>
+					<h1>Find + Replace</h1>
+					<p>in current file</p>
+					<div class="fragment">
+						<p><img src="images/mac.svg">&nbsp;&nbsp;<code> ⌘ + F</code></p>
+						<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + F</code></p>
+					</div>
+					<div class="fragment">
+						<h6>OR use Go To Anything</h6>
+						<p><code>⌘/Ctrl + P   →   #(your search term) </code></p>
+					</div>
+					<aside class="notes">
+						show this last thing
+					</aside>
+				</section>
+				
+				<section>
+					<img src="images/findReplace_Wrap.png">
+					<aside class="notes">
+						- Turned off, it will search from where the caret is to the end of the document
+						- Turned on, it will wrap around the whole document
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_InSelection.png">
+					<aside class="notes">
+						Only searches in the selected block
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/findReplace_highlight.png">
+					<aside class="notes">
+						- Highlights the matches with an outline around all the matches
+					</aside>
+				</section>
+
+				<section>
+					<a href="http://docs.emmet.io/" target="_blank"><h1>Emmet</h1>
+						<img src="images/emmet.svg">
+					</a>
+					<aside class="notes">
+						- Emmet is Awesome - if you're working with HTML or CSS/Sass/Less!
+						- it adds tab-completed shortcuts that can greatly improve your HTML & CSS workflow and will save you loads of time.
+						- You can bang out a lot of otherwise tedious markup in one line of code. (NEXT)
+					</aside>
+				</section>
+
+<section>
+<pre><code class="hljs" data-trim>(header>nav>ul>li*4>a:link)+(article.part-$*4)+footer>p>lorem  + TAB</code></pre>
+<pre class="fragment">
+<code class="hljs"><header>
+<nav>
+	<ul>
+		<li><a href="http://"></a></li>
+		<li><a href="http://"></a></li>
+		<li><a href="http://"></a></li>
+		<li><a href="http://"></a></li>
+	</ul>
+</nav>
+</header>
+<article class="part-1"></article>
+<article class="part-2"></article>
+<article class="part-3"></article>
+<article class="part-4"></article>
+<footer>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nobis saepe inventore, enim sequi ipsum modi rem, laboriosam eligendi, tempora tenetur! Sequi itaque, aut incidunt, est et repudiandae nostrum delectus.</p>
+</footer>
+</code>
+</pre>
+<a href="http://docs.emmet.io/cheat-sheet/" class="fragment">Emmet Cheat Sheet</a>
+<aside class="notes">
+- Check out the handy Cheat Sheet for more information
+</aside>
+</section>
+
+<section data-background="images/clap_clap.gif"></section>
+
+<section>
+<h2>More Emmet Shortcuts for HTML</h2>
+<pre>
+<code class="hljs">// Selectors
+	p + tab → <p>|</p>
+	span + tab → <span>|</span>
+	img + tab → <img src="|" alt="">
+
+// Classes + IDs
+	.box → <div class="box"></div>
+	span.small.uppercase → <span class="small uppercase"></span>
+	#contact → <div id="contact"></div>
+
+// Text inside elements
+	p{hello world} → <p>hello world</p>
+
+
+</code>
+</pre>
+</section>
+
+<section>
+<h2>Closing Element Comments</h2>
+<pre>
+<code>
+.container>.ol>li*3|c →
+
+<div class="container">
+    <div class="ol">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+    <!-- /.ol -->
+</div>
+<!-- /.container -->
+
+</code>
+</pre>
+</section>
+
+
+<section>
+<h1>Emmet &amp; CSS</h1>
+</section>
+<section>
+<code class="hljs">posr → position: relative;</code>
+<code class="fragment hljs">posa → position: absolute;</code>
+<code class="fragment hljs">fll → float: left;</code>
+<code class="fragment hljs">dib → display: inline-block;</code>
+<code class="fragment hljs">tac → text-align: center;</code>
+<code class="fragment hljs">w100 → width: 100px;</code>
+<code class="fragment hljs">p200p → padding: 200%</code>
+<code class="fragment hljs">fs10e → font-size: 10em;</code>
+<code class="fragment hljs">m0-a → margin: 0 auto;</code>
+<code class="fragment hljs">p10-20 → padding: 10px 20px; </code>
+<code class="fragment hljs">m10--20p → margin: 10px -20%;</code>
+<aside class="notes">
+- you usually just need to type the first couple letters of the CSS property, and you get what you need
+- works with numbers too and the default is px
+- You can add a p for percent or e for ems, r for rems, vh etc.
+- works on multiple vales just add a dash between
+- add two dashes if you actually want a negative value
+</aside>
+</section>
+
+		<section>
+			<h1>Wrapping with Emmet</h1>
+			<div class="fragment">
+				<p>The Default Sublime way:</p>
+				<p><img src="images/mac.svg">&nbsp;&nbsp;<code> Shift + ⌘ + W</code></p>
+				<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Shift + Alt + W</code></p>
+			</div>
+			<div class="fragment">
+				<p>The Emmet way:</p>
+				<p><img src="images/mac.svg">&nbsp;&nbsp;<code> Ctrl + W → .class + Return</code></p>
+				<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Shift + Alt + W → span.blue + Enter</code></p>
+			</div>
+
+			<aside class="notes">
+				- default only allows you to wrap a selection in a tag. Not nearly as flexible as with emmmet (next)
+				- The Emmet way will open an input box at the bottom of the editor, where you can type Emmet shortcut. The default is a div or the last thing that you entered in here. But you can put anything in here.
+			</aside>
+		</section>
+
+		<section>
+			<h1>base64/Encode Images</h1>
+			<p>Move cursor inside the source (HTML) or URL string (CSS/Sass)</p>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code> Ctrl + Shift + D</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + '</code></p>
+
+			<aside class="notes">
+				- base64/Encode Images right inside sublime
+				- in either HTML or CSS/Sass 
+			</aside>
+		</section>	
+
+		<section>
+			<h1>Snippets</h1>
+			<aside class="notes">
+				- Emmet is amazing for HTML/CSS, but if you find yourself writing the same thing over and over in other languages, take a minute and make yourself a snippet!
+			</aside>
+		</section>
+
+		<section data-background="images/how.gif"></section>		
+
+		<section>
+			<h3>Create a new snippet:</h3>
+			<code>Tools → New Snippet...</code>
+			<pre><code class="hljs"><snippet>
+    <content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <!-- <tabTrigger>hello</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet></code></pre>
+<h4>Save File with a <code>.sublime-snippet</code> extension to</h4>
+<code>Preferences → Browse Packages → User → Snippets</code>
+		<aside class="notes">
+			- This is what a new snippet looks like
+			- ${1:} - denotes a placeholder and a tab stop. These can be used multiple times (for a variable in a JavaScript loop, for example)
+			- Here's a snippet I made for a simple jQuery onClick function (next)
+			- you can save anywhere in your packages folder. I make a 'snippets' folder inside my user folder and put them all there
+		</aside>
+		</section>
+
+		<section>
+			<h3>Simple Snippet for a jQuery Function</h3>
+			<pre><code><snippet>
+    <content><![CDATA[
+    \$('${1:selector}').on('${2:click touchstart}', function(){
+        ${3://Do this stuff}
+    });
+]]></content>
+    <tabTrigger>onclick</tabTrigger>
+    <scope>source.js</scope>
+</snippet></code></pre>
+<aside class="notes">
+- I've set the scope to be in a JS file and the tab trigger to be onclick (show it in action)
+- There are a ton of Snippets available for every language. Just search in Package Control 
+- You can also use the command pallet to find snippets you've installed, if you forget them
+</aside>
+		</section>
+
+		<section data-background="images/pumped.gif"></section>
+
+
+		<section>
+			<h2>A Bunch of random shortcuts that I use all the time and think you may find use for too</h2>
+		</section>
+
+		<section>
+			<h2>Line Bubbling / Moving Things up/down</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code> ⌘ + Ctrl + ↑ or ↓</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>(Ctrl + Shift + ↑ or ↓</code></p>
+		</section>
+
+		<section>
+			<h2>Joining Lines</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + J</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + J</code></p>
+			<aside class="notes">
+				- Don't use backspace, use command + J instead
+			</aside>
+		</section>	
+
+		<section>
+			<h2>Duplicating</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Shift + D</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Shift + D</code></p>
+			<aside class="notes">
+				- Don't use control + c, then control + V. this is faster.
+			</aside>
+		</section>	
+
+		<section>
+			<h2>Copy & Paste from Memory</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + K  →  ⌘ + V</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code> Ctrl + K  →  Ctrl + V</code></p>
+			<aside class="notes">
+				- Pretty cool - get a list of the last few things you've added to your clipboard
+			</aside>
+		</section>	
+
+
+		<section>
+			<h2>Select the Next Instance of..</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + D </code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + D</code></p>
+			<p>Undo one:</p>
+			<code>⌘/Ctrl + U</code>
+			<aside class="notes">
+				- Will Select the next instance of what you've selected. and keep going to the end of the doc.
+				- Selected too many? Command + U will undo the last one
+			</aside>
+		</section>	
+
+		<section>
+			<h2>Select All Instances of..</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Ctrl + D </code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code> ? </code></p>
+			<aside class="notes">
+				- Will Select the next instance of what you've selected. and keep going to the end of the doc.
+			</aside>
+		</section>
+
+		<section>
+			<h2>Paste AND Indent</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Shift + v </code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Shift + v </code></p>
+			<p>Make it the defaut action</p>
+			<pre><code>Preferences → Key Bindings - User
+
+{ "keys": ["super+v"], "command": "paste_and_indent" },
+{ "keys": ["super+shift+v"], "command": "paste" }</code></pre>
+
+			<aside class="notes">
+				- make it the default by pasting this in your user Key Bindings file
+			</aside>
+		</section>	
+
+		<section>
+			<h2>Inserting a line before/After</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Enter [after] and ⌘ + Shift + Enter [before]</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Enter [after] and Ctrl + Shift + Enter [before] </code></p>
+			<aside class="notes">
+				- Add a line before or after without needing to leave where you are in your code
+			</aside>
+		</section>	
+
+		<section>
+			<h2>Jump tp Beginning/End Line</h2>
+			<code>⌘/Ctrl + →/←</code>
+			<div class="fragment">
+				<p>To the very end (when line wrapping is on)</p>
+				<code>⌘/Ctrl + →/← + →/←</code>
+			</div>
+		</section>
+
+		<section>
+			<h2>Select Line</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Shift+ → + →</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Shift+ → + →</code></p>
+			<p>or</p>
+			<code>⌘+ L</code>
+		</section>
+
+		<section>
+			<div class="fragment">
+				<h2>Jump by Word</h2>
+				<code>Alt + →</code>
+			</div>
+			<div class="fragment">
+				<h2>Select those words too</h2>
+				<code>Alt + Shift + →</code>
+			</div>
+		</section>
+
+		<section>
+			<h2>Select & Expand to Tag</h2>
+			<p><img src="images/mac.svg">&nbsp;&nbsp;<code>⌘ + Shift + A</code></p>
+			<p><img src="images/windows.svg">&nbsp;&nbsp;<code>Ctrl + Shift + A </code></p>
+
+			<aside class="notes">
+				-elect all text inside a tag -  Shift + ⌘ + a.
+				- hit it again to select the tag too
+			 </aside>
+		</section>
+
+		<section>
+			<h2>Select & Expand to Brackets</h2>
+			<code>Ctrl + Shift + M</code>
+			<aside class="notes">
+				useful for other languages
+			 </aside>
+		</section>		
+
+	</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		width: 1080,
+		height: 787,
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		transition: 'convex', // none/fade/slide/convex/concave/zoom
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+</script>
+</body>
+</html>
